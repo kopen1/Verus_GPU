@@ -1,0 +1,21 @@
+yes | pkg update -y
+yes | pkg upgrade -y
+yes | pkg install libjansson wget nano -y
+
+mkdir ccminer && cd ccminer
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
+chmod +x ccminer start.sh
+cd && cd && cd && nano ../usr/etc/bash.bashrc
+
+======================================================================================
+
+
+cd ccminer/&&./ccminer -a verus -o stratum+tcp://cn.vipor.net:5040 -u RNgSceTbNr2NRkLxkGJxJgaDGuqYMAKyTA.RN10pro --cpu-priority 1 --cpu-affinity -1 -p x -t 8
+
+
+=== Auto Start
+https://d.apkpure.com/b/APK/com.sugarapps.autostartmanager?versionCode=28&nc=&sv=21
+
+==== Termux
+ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
